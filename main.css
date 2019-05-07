@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+      text-align: center;
+      margin: 0;
+  }
+
+  nav, footer {
+      padding: 2% 0;
+      background-color: #747878
+  }
+
+  footer {
+    text-align: right;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  footer p {
+      margin: 0;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  header {
+      padding: 60% 0;
+      background-color: #D5D7D7; 
+      height: 100vh;
+  }
+
+  .bio-page {
+      height: 100vh;
+      padding: 10% 0;
+      background-color: #B0B4B4  ;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly; 
+  }
+
+  .bio-page p {
+      width: 60%;
+      border: solid black 2px;
+      padding: 1%;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  .contact {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .contact a {
+      margin: 2% 0;
+  }
+
+  .projects-page {
+      background-color: #D5D7D7;
+      min-height: 100vh;
+      padding: 1% 0;
+  }
+
+  .project {
+    min-height: 200px;
+    width: 90%;
+    border: solid black 1px;
+    margin: 10% auto;
+  }
+
+  .project img {
+      width: 80%;
+      height: 30%;
+      margin-top: 1%;
+  }
+
+  .project p {
+      padding: 3% 3%;
+  }
+
+  .project a {
+      display: inline-block;
+      padding: 3% 0;
+  }
+
+  .viewPro {
+      position: relative;
+      bottom: 0;
+      right: 20%;
+  }
+
+  .viewCode {
+    position: relative;
+    bottom: 0;
+    left: 20%;
+  }
+
+  @media only screen and (min-width: 1366px) {
+
+    header {
+        padding: 20% 0;
+    }
+
+    nav, footer {
+        padding: .8%;
+    }
+
+    .bio-page p {
+        width: 30%;
+    }
+
+    .contact {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .project {
+        min-height: 100px;
+        width: 40%;
+      }
+
+  }
