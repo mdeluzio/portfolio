@@ -9,24 +9,24 @@
     <link href="https://fonts.googleapis.com/css?family=Nixie+One|Roboto" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
 </head>
 <body>
     <nav role="navigation">
         <ul>
-            <li><a href="#toTopOfPage">Home</a></li>
-            <li><a href="#toBioPage">Bio</a></li>
-            <li><a href="#toProjectsPage">Projects</a></li>
+            <li><a class="autoScroll" href="#toTopOfPage">Home</a></li>
+            <li><a class="autoScroll" href="#toBioPage">Bio</a></li>
+            <li><a class="autoScroll" href="#toProjectsPage">Projects</a></li>
         </ul>
     </nav>
     <main role="main">
-        <a name="toTopOfPage"></a>
-        <header role="banner">
+        <header role="banner" id="toTopOfPage">
             <h1>MARK <br>DELUZIO</h1>
             <p>I turn ideas into reality.</p>
         </header>
 
-        <a name="toBioPage"></a>
-        <div class="bio-page">
+        <div class="bio-page" id="toBioPage">
             <p>I am a web developer based in the greater Philadelphia region. I love video games, repairing electronics, learning, solving problems
                     and spending time with my family. I have always been passionate about computers and technology and I decided to turn that passion into
                     a career. Turning an idea into a responsive, fluid website is why I love to code. I am currently looking for work and would love
@@ -40,8 +40,7 @@
             </div>
         </div>
 
-        <a name="toProjectsPage"></a>
-        <div class="projects-page">
+        <div class="projects-page" id="toProjectsPage">
             <div class="project one">
                 <img src="images/LOZ quiz screenshot.png" alt="placeholder">
                 <h2>Legend of Zelda Quiz App</h2>
