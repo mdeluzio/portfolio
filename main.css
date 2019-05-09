@@ -5,11 +5,23 @@
   body {
       text-align: center;
       margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #FE5936;
+  }
+
+  a {
+    cursor: pointer;
+    font-family: 'Overpass Mono', monospace;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #7f36fe;
   }
 
   nav, footer {
       padding: 2% 0;
-      background-color: #747878
+      background-color: #e5775e;
   }
 
   footer {
@@ -20,8 +32,15 @@
     right: 0;
   }
 
+  footer a {
+    color: #febf36;
+  }
+
   footer p {
       margin: 0;
+      font-size: .8em;
+      padding-right: 2%;
+      font-weight: bold;
   }
 
   nav {
@@ -29,46 +48,107 @@
     top: 0;
     left: 0;
     right: 0;
-    display: flex;
-    justify-content: space-evenly;
+  }
+
+  nav ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      justify-content: space-evenly;
+  }
+
+  nav ul li {
+      display: inline-block;
+  }
+
+   nav a {
+      color: #febf36;
+      font-weight: bold;
+      font-size: 1.4em;
   }
 
   header {
       padding: 60% 0;
-      background-color: #D5D7D7; 
       height: 100vh;
+      color: #FFFFFF;
+  }
+
+  header h1 {
+    font-family: 'Nixie One', cursive;
+    font-size: 3.8em;
+    letter-spacing: .05em;
+  }
+
+  header p {
+    font-size: 1.5em;
+    letter-spacing: .03em;
   }
 
   .bio-page {
-      height: 100vh;
-      padding: 10% 0;
-      background-color: #B0B4B4  ;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly; 
+    height: 100vh;
+    padding: 10% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; 
   }
 
   .bio-page p {
-      width: 60%;
-      border: solid black 2px;
-      padding: 1%;
-      margin-left: auto;
-      margin-right: auto;
+    font-size: 1em;
+    padding: 4%;
+    text-align: left;
+    line-height: 1.4;
+    letter-spacing: .05em;
+    color: #FFFFFF;
   }
 
   .contact {
-      display: flex;
-      flex-direction: column;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact ul li {
+    display: block;
+  }
+
+  .contact li {
+    margin: 3% auto;
+    width: 75%;
+    background-color: #e5775e;
+    border-radius: 10px;
   }
 
   .contact a {
-      margin: 2% 0;
+    display: inline-block;
+    color: #febf36;
+    font-weight: bold;
+    font-size: 1em;
+    width: 100%;
+    height: 100%;
+    padding: 2% 0;
   }
 
+   a.reverse {
+    background-color: #febf36;
+    color: #e5775e;
+    border-radius: inherit;
+    }
+
+    .contact a:hover {
+      color: #7f36fe;
+    }
+
   .projects-page {
-      background-color: #D5D7D7;
-      min-height: 100vh;
-      padding: 1% 0;
+    min-height: 100vh;
+    padding: 10% 0;
   }
 
   .project {
@@ -76,6 +156,12 @@
     width: 90%;
     border: solid black 1px;
     margin: 10% auto;
+    background-color: #DAF7A6;
+  }
+
+  .project h2 {
+    font-family: 'Nixie One', cursive;
+    font-size: 1.3em;
   }
 
   .project img {
@@ -86,47 +172,144 @@
 
   .project p {
       padding: 3% 3%;
+      font-size: 1em;
+      text-align: left;
+      line-height: 1.3;
   }
 
   .project a {
       display: inline-block;
-      padding: 3% 0;
+      padding: 3% 2%;
+      border-radius: 4%;
+      background-color: #e5775e;
+      color: #febf36;
+      font-weight: bold;
+  }
+
+  .project a:hover {
+    color: #7f36fe;
   }
 
   .viewPro {
       position: relative;
       bottom: 0;
-      right: 20%;
+      right: 7%;
+      margin-bottom: 1%;
   }
 
   .viewCode {
     position: relative;
     bottom: 0;
-    left: 20%;
+    left: 7%;
+    margin-bottom: 1%;
   }
 
-  @media only screen and (min-width: 1366px) {
-
+  @media only screen and (min-width: 768px) {
+    
     header {
-        padding: 20% 0;
+      padding: 40% 0;
     }
 
-    nav, footer {
-        padding: .8%;
+    footer p {
+      font-size: 1.2em;
+    }
+
+    header h1 {
+      font-size: 4.5em;
+      letter-spacing: .05em;
+    }
+  
+    header p {
+      font-size: 1.8em;
     }
 
     .bio-page p {
-        width: 30%;
+      width: 75%;
+      font-size: 1.5em;
     }
 
-    .contact {
-        flex-direction: row;
-        justify-content: space-evenly;
+    .contact li {
+      width: 50%;
     }
 
     .project {
-        min-height: 100px;
+      width: 80%; 
+    }
+
+    .project h2 {
+      font-size: 1.8em;
+    }
+
+    .project p {
+      font-size: 1.3em;  
+  }
+
+  .project a {
+    font-size: 1.2em;
+}
+
+  }
+
+  @media only screen and (min-width: 1200px) {
+
+    header {
+      padding: 20% 0;
+    }
+
+    nav, footer {
+        padding: .4%;
+    }
+
+    nav a {
+      font-size: 1.6em;
+  }
+
+    footer p {
+      font-size: 1.4em;
+    }
+
+    .bio-page p {
+        width: 40%;
+        align-self: center;
+        font-size: 1.4em;
+    }
+
+    .bio-page {
+      flex-direction: row;
+      justify-content: space-between; 
+    }
+
+    .contact {
+      justify-content: center;
+      width: 50%;
+    }
+
+    .contact li {
+      width: 40%;
+    }
+
+    .contact a {
+      font-size: 1.4em;
+    }
+
+    .projects-page {
+        padding: 1% 0;
+    }
+
+    .project {
         width: 40%;
       }
+
+      .project h2 {
+        font-size: 1.6em;
+      }
+  
+      .project p {
+        font-size: 1em;  
+    }
+  
+    .project a {
+      font-size: .8em;
+    }
 
   }
